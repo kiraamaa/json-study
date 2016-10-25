@@ -38,7 +38,24 @@ As it makes sense to you please write the following in JSON format:
 -   Has lived in two places recently: 123 Fake street, and 2 Muchinfo Road
 
 ```json
-<!-- your answer here -->
+{ "person": [
+  {
+    "name": "Jason",
+    "pet": "cat",
+    "petName": "Mr. Kitty",
+    "roomates": [
+      {
+        "name": "Dave"
+      },
+      {
+        "name": "Miller"
+      }
+    ],
+    "sports": ["Red Sox", "Patriots", "Bruins"],
+    "addresses": ["123 Fake Street", "2 Muchinfo Road"]
+  }
+]}
+
 ```
 
 I forgot, my roomate Dave has two goldfish, one named Bob (he's red) and the
@@ -46,7 +63,36 @@ other named Mr.MagicNibbles (yellow) and bites a bit. Please copy the JSON you
 already wrote and include the information about Dave's fish.
 
 ```json
-<!-- your answer here -->
+"person": [
+ {
+   "name": "Jason",
+   "petType": "cat",
+   "petName": "Mr. Kitty",
+   "roomates": [
+     {
+       "name": "Dave",
+       "pets": [
+         {
+           "petType": "goldfish",
+           "petName": "Bob",
+           "petColor": "red",
+         },
+         {
+           "petType": "goldfish",
+           "petName": "Mr.MagicNibbles",
+           "petColor": "yellow",
+           "petError": "bites",
+         }
+       ],
+     },
+     {
+       "name": "Miller"
+     }
+   ],
+   "sports": ["Red Sox", "Patriots", "Bruins"],
+   "addresses": ["123 Fake Street", "2 Muchinfo Road"]
+ }
+]}
 ```
 
 ## JSON Methods
@@ -54,7 +100,7 @@ already wrote and include the information about Dave's fish.
 Using the JSON your wrote above, can you write a method on the JSON?
 
 ```json
-<!-- your answer here -->
+No. As seen above, JSON cannot have methods, since it is a data exchange format.
 ```
 
 ## JSON Comments
@@ -62,5 +108,5 @@ Using the JSON your wrote above, can you write a method on the JSON?
 Using the JSON your wrote above, can you write a comment in the JSON?
 
 ```json
-<!-- your answer here -->
+Also no. As seen above, JSON cannot have comments, since it is just a string.
 ```
